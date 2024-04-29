@@ -151,3 +151,6 @@ private:
         return max(lh, rh) + node->val ;
     }
 };
+
+=================================================================================================
+Maximum Path Sum // Function MaxPath returns [max(lh, rh) + node->val] used to calculate int maxpathsum.
