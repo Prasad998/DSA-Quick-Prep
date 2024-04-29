@@ -73,21 +73,9 @@ vector<int> LevelOrder(Node* root)
 	return ans; 
 }
 
-======================================================================
-Maximum Depth in a Binary Tree
-
-int MaxDepth(Node* root)
-{
-	if(root == NULL) return 0  ; 
-
-	int lh =  MaxDepth(root->left) ;
-	int rh =  MaxDepth(root->right) ;
-
-	return 1+ max(lh , rh) ; 
-}
 
 ======================================================================
-Maximum Depth in a Binary Tree
+Maximum Depth in a Binary Tree 
 
 int MaxDepth(Node* root)
 {
@@ -108,9 +96,8 @@ int Balanced(Node* root)
 	int lh =  Balanced(root->left) ;
 	int rh =  Balanced(root->right) ;
 
-	if( (lh == -1) || (rh == -1) ) return -1 ; 
-
-	if(abs(lh- rh)>1) return -1 ; 
+	if( (lh == -1) || (rh == -1) ) return -1 ; //addition in previous code
+	if(abs(lh- rh)>1) return -1 ; 		   //	
 
 	return 1+ max(lh , rh) ; 
 }
