@@ -3,33 +3,33 @@ Insertion, Bubble, Selection Sort
 #include<bits/stdc++.h>
 
 using namespace std;
-// void selection_sort(int arr[], int n) {
-//   // selection sort
-//   for(int i = 0 ; i <n-1 ; i++)
-//   {
-//       int mini = i ; 
-//       for(int  j=1 ;j<n ;j++)
-//       {
-//           if(arr[j]<arr[mini]) mini = j ; 
-//       }
-//       swap(arr[mini], arr[i]);
-//   }
-  
-  
-// void insertion_sort(int arr[], int n)
-// {
-//     for(int i = 0 ; i<n;i++)
-//     {
-//         int j = i ; 
-//         while(j>0  and arr[j-1]>arr[j])
-//         {
-//             swap(arr[j], arr[j-1]) ;
-//             j-- ; 
-//         }
-//     }
+void selection_sort(int arr[], int n) {
+  // selection sort
+  for(int i = 0 ; i <n-1 ; i++)
+  {
+      int mini = i ; 
+      for(int  j=1 ;j<n ;j++)
+      {
+          if(arr[j]<arr[mini]) mini = j ; 
+      }
+      swap(arr[mini], arr[i]);
+  }
+
+===========================================================================
+void insertion_sort(int arr[], int n)
+{
+    for(int i = 0 ; i<n;i++)
+    {
+        int j = i ; 
+        while(j>0  and arr[j-1]>arr[j])
+        {
+            swap(arr[j], arr[j-1]) ;
+            j-- ; 
+        }
+    }
 
 
-
+===========================================================================
 void bubble_sort(int arr[], int n) {
     // bubble sort
     for (int i = 0 ; i<n-1;i++) {
@@ -44,6 +44,9 @@ void bubble_sort(int arr[], int n) {
             break;
         }
     }
+
+
+  =  =  =  =  =  =  =  =  =  =  =  =  =  = BOILER PLATE CODE  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =
 
   cout << "After bubble_sort: " << "\n";
   for (int i = 0; i < n; i++) {
