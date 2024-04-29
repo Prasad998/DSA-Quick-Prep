@@ -14,7 +14,7 @@ public:
 
 };
 
-======================================================================
+=================================================================================================
 Pre Order Traversal 
 
 void PreOrder(Node* node)
@@ -25,7 +25,8 @@ void PreOrder(Node* node)
 	PreOrder(node->left) ; 
 	PreOrder(node->right) ; 
 }
-======================================================================
+
+=================================================================================================
 In Order Traversal 
 
 void InOrder(Node* node)
@@ -37,7 +38,7 @@ void InOrder(Node* node)
 	InOrder(node->right) ; 
 }
 
-======================================================================
+=================================================================================================
 Post Order Traversal 
 
 void PostOrder(Node* node)
@@ -50,7 +51,7 @@ void PostOrder(Node* node)
 }
 
 
-======================================================================
+=================================================================================================
 Level Order Traversal 
 
 vector<int> LevelOrder(Node* root)
@@ -73,8 +74,7 @@ vector<int> LevelOrder(Node* root)
 	return ans; 
 }
 
-
-======================================================================
+=================================================================================================
 Maximum Depth in a Binary Tree 
 
 int MaxDepth(Node* root)
@@ -86,7 +86,8 @@ int MaxDepth(Node* root)
 
 	return 1+ max(lh , rh) ; 
 }
-======================================================================
+
+=================================================================================================
 Check Balanced Binary Tree //If Balanced, retruns the height of the Binary tree, else returns false.
 
 int Balanced(Node* root)
@@ -102,5 +103,51 @@ int Balanced(Node* root)
 	return 1+ max(lh , rh) ; 
 }
 
+=================================================================================================
+Diameter of Binary Tree  // Function height returns [1+max(lh, rh)] used to calculate int diameter.
 
-	
+
+class Solution {
+public:
+    int diameterOfBinaryTree(Node* root) {
+        int diameter = 0; 
+        height(root, diameter); //Function called
+        return diameter;
+    }
+private:
+    // Function to calculate the height of the tree and update the diameter
+    int height(Node* node, int& diameter) {
+
+        if (node == NULL) return 0 ; 
+		
+        int lh = height(node->left, diameter);
+        int rh = height(node->right, diameter);
+
+        diameter = max(diameter, lh + rh); //addition in previous code
+        return 1 + max(lh, rh);
+    }
+};
+
+=================================================================================================
+Maximum Path Sum // Function MaxPath returns [max(lh, rh) + node->val] used to calculate int maxpathsum.
+
+class Solution {
+public:
+    int MaxPathSum(Node* root) {
+        int maxpathsum = 0; 
+        maxPath(root, maxpathsum);  //Function called
+        return maxpathsum;
+    }
+private:
+    // Function to calculate the height of the tree and update the diameter
+    int maxPath(Node* node, int& maxpathsum) {
+
+        if (node == NULL) return 0 ; 
+		
+        int lh = maxPath(node->left, maxpathsum);
+        int rh = maxPath(node->right, maxpathsum);
+
+        maxpathsum = max(maxpathsum, lh + rh + node->val);  //addition in previous code
+        return max(lh, rh) + node->val ;
+    }
+};
