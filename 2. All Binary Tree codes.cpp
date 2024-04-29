@@ -202,14 +202,13 @@ public:
         }
         // Recursively add leaves of the left and right subtrees
         if (root->left)   addLeaves(root->left, res);
-
         if (root->right)  addLeaves(root->right, res);
     }
     // Main function to perform the boundary traversal of the binary tree
     vector<int> printBoundary(Node* root) {
         vector<int> res;   
         if (root == NULL) return res ; 
-        if (!isLeaf(root))  res.push_back(root->data);
+        if (isLeaf(root)== false)  res.push_back(root->data);
 
         addLeftBoundary(root, res);
         addLeaves(root, res);
