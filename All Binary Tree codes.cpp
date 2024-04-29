@@ -83,5 +83,37 @@ int MaxDepth(Node* root)
 	int lh =  MaxDepth(root->left) ;
 	int rh =  MaxDepth(root->right) ;
 
-	return 1+ max(lh + rh) ; 
+	return 1+ max(lh , rh) ; 
 }
+
+======================================================================
+Maximum Depth in a Binary Tree
+
+int MaxDepth(Node* root)
+{
+	if(root == NULL) return 0  ; 
+
+	int lh =  MaxDepth(root->left) ;
+	int rh =  MaxDepth(root->right) ;
+
+	return 1+ max(lh , rh) ; 
+}
+======================================================================
+Check Balanced Binary Tree //If Balanced, retruns the height of the Binary tree, else returns false.
+
+int Balanced(Node* root)
+{
+	if(root == NULL) return 0  ; 
+
+	int lh =  Balanced(root->left) ;
+	int rh =  Balanced(root->right) ;
+
+	if( (lh == -1) || (rh == -1) ) return -1 ; 
+
+	if(abs(lh- rh)>1) return -1 ; 
+
+	return 1+ max(lh , rh) ; 
+}
+
+
+	
