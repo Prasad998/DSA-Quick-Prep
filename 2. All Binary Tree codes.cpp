@@ -175,7 +175,7 @@ public:
         while (curr) {
             if (isLeaf(curr)== false)  res.push_back(curr->data);
             if (curr->left)  curr = curr->left;
-	    			else curr = curr->right;   
+	    else curr = curr->right;   
         }
     }
 	
@@ -185,13 +185,13 @@ public:
         while (curr) {
             if (!isLeaf(curr))     stack.push(curr->data);
             if (curr->right)  curr = curr->right;
-	    			else curr = curr->left;   
+	    else curr = curr->left;   
         }
-	   		while(!st.empty())
-		   	{
-			  	 res.push_back(st.top());
-				   st.pop() ; 
-				}
+	while(!st.empty())
+	{
+		res.push_back(st.top());
+		st.pop() ; 
+	}
     }
     void addLeaves(Node* root, vector<int>& res) {
         // If the current node is a leaf, add its value to the result
