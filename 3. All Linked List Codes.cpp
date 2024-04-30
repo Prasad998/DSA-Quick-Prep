@@ -156,4 +156,134 @@ ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
 }
 
 =================================================================================================
-Find Intersection Point in a Linked List
+Detect a Cycle in Linked List
+
+bool detectCycle(ListNode* head)
+{
+	if(head== NULL || head->next == NULL) return false ;
+	ListNode* slow = head ;
+	ListNode* fast = head ;
+
+	while(fast->next != NULL && fast->next->next!= NULL)
+	{
+		fast =  fast->next->next ;
+		slow = slow->next ; 
+		if(fast == slow) return true ;
+	}
+	return false ;
+}
+
+=================================================================================================
+Detect a Cycle in Linked List // Function reverseLL is helper function
+
+class Solution {
+public:
+    ListNode* reverseLL(ListNode* head) 			// Code to reverse a LL.
+    {											
+        ListNode* pre = NULL ;
+        ListNode* next = NULL ;
+        while(head!= NULL)
+        {
+            next = head->next ; 
+            head->next = pre ;
+            pre = head;
+            head = next ;
+        }
+        return pre ;
+    }
+public:
+    bool isPalindrome(ListNode* head) {
+
+        if(head ==NULL and head->next == NULL) return true;
+        ListNode* slow = head ;
+        ListNode* fast =  head ;
+        while(fast->next != NULL and fast->next->next != NULL)    // Reaching middle of LL.
+        {
+            slow =  slow->next ;
+            fast =  fast->next->next ; 
+        }
+		
+        slow->next = reverseLL(slow->next);  		//Helper function ReverseLL(slow->next) called.
+        
+		slow = slow->next ; 
+        while(slow!=NULL)
+        {
+            if(head->val != slow->val) return false ;
+            slow =  slow->next ;
+            head =  head->next;
+        }
+        return true ;
+    }
+};
+
+
+=================================================================================================
+Reverse in group - 'K' 
+
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+
+        if(head == NULL or k ==1) return head  ; 
+        ListNode* dummy = new ListNode(0) ; 
+        dummy->next = head ;
+        
+        ListNode*  pre = dummy ; 
+        ListNode* curr = dummy  ;
+        ListNode* nex = dummy ; 
+
+        int cnt = 0 ; 
+        while(curr->next !=NULL)
+        {
+            curr =  curr->next ; 
+            cnt++ ; 
+        }
+
+        while(cnt>=k)
+        {
+             curr =  pre->next  ;
+             nex =  curr->next ; 
+            for(int i = 1  ; i <k ; i++) // *******| beware here the loop starts from 1 |***********
+            {
+            curr->next = nex->next ;
+            nex->next =  pre->next ;
+            pre->next = nex ; 
+            nex =  curr->next ;
+            }
+
+            pre =  curr ; 			// Update node.
+            cnt = cnt- k  ; 		// Decrement count.
+        }
+
+        return dummy->next ; 
+    }
+};
+
+
+=================================================================================================
+Find Starting point of the Cycle
+
+ListNode *detectCycle(ListNode *head) {
+        if(head == NULL or head->next == NULL) return NULL ; 
+
+        ListNode* slow =  head ;
+        ListNode* fast =  head ;
+        ListNode* entry = head ; 
+
+        while(fast->next != NULL and fast->next->next != NULL)
+        {
+            slow =  slow->next ;
+            fast =  fast->next->next ;
+
+            if(slow == fast)
+            {
+                while(entry != slow)					// Newly added code to detect a cycle in LL
+                {
+                    slow = slow->next ;
+                    entry =  entry->next ; 
+                }
+                return entry ; 
+            }
+        }
+        return NULL ; 
+}
