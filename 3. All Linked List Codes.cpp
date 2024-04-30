@@ -106,6 +106,7 @@ void deleteNode(ListNode* node) {
         node->next = node->next->next ; 
     }
 };
+
 =================================================================================================
 Add two numbers given as Linked List
 
@@ -137,3 +138,22 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         }
     return dummy->next ; 
 }
+
+=================================================================================================
+Find Intersection Point in a Linked List
+
+ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+	if( headA == NULL || headB  == NULL) return NULL ; 
+	ListNode* a = headA ;
+	ListNode* b = headB ; 
+	
+	while(a!=b)
+	{
+	    a = a == NULL ? headB : a->next ; 
+	    b = b == NULL ? headA : b->next ;
+	}
+	return a ;
+}
+
+=================================================================================================
+Find Intersection Point in a Linked List
