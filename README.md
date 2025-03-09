@@ -5,30 +5,9 @@ https://www.hackerearth.com/practice/notes/standard-template-library/
 https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md
 
 
-**Data Strutures** 
+**Data Strutures | Algorithms | Problem Solving Techniques** 
 
-Arrays - Vectors
-
-Linked Lists  
-
-Stacks
-
-Queues
-
-Hash table
-
-Trees
-
-Binary Search Trees (BST)
-
-Heaps
-
-Graphs
-
-Trie
-
-Union Find (Disjoint Set)
-
+![image](https://github.com/user-attachments/assets/c447ec4b-9e75-4019-925e-d8cb3cd784ba)
 
 **Learning Path**
 
@@ -49,6 +28,10 @@ When learning DSA, focus on understanding the underlying concepts and principles
 
 **Memorization may help you solve specific problems, but it limits your ability to adapt and apply your knowledge to new scenarios.**
 
+**
+Repetition is key to transferring knowledge from short-term to long-term memory.
+By revisiting concepts and problems regularly, you reinforce your understanding and make it easier to recall the information later.
+**
 ![image](https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209)
 
 ![image](https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342)
