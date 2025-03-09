@@ -9,9 +9,7 @@ https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%
 
 Arrays - Vectors
 
-Linked Lists
-
-Stacks
+Linked Lists  Stacks
 
 Queues
 
