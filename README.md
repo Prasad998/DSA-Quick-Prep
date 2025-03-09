@@ -48,3 +48,10 @@ Example: If you can comfortably solve most easy problems, move to medium problem
 When learning DSA, focus on understanding the underlying concepts and principles rather than just memorizing code or solutions.
 
 **Memorization may help you solve specific problems, but it limits your ability to adapt and apply your knowledge to new scenarios.**
+
+![image](https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209)
+
+![image](https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342)
+
+![image](https://github.com/user-attachments/assets/9400d550-49f5-48dc-97b7-fa1766cb4bd8)
+
