@@ -5,7 +5,7 @@ https://www.hackerearth.com/practice/notes/standard-template-library/
 https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md
 
 
-                                  **Data Strutures | Algorithms | Problem Solving Techniques** 
+                                    Data Strutures | Algorithms | Problem Solving Techniques
 
 ![image](https://github.com/user-attachments/assets/c447ec4b-9e75-4019-925e-d8cb3cd784ba)
 
