@@ -28,3 +28,8 @@ Graphs
 Trie
 
 Union Find (Disjoint Set)
+
+
+**Learning Path**
+
+![image](https://github.com/user-attachments/assets/bf2ebd62-7d9f-47a2-aa93-4938061e6e36)
