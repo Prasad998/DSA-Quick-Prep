@@ -6,7 +6,8 @@ This file contains the snippets I can use for the corresponding coding patterns.
 using namespace std;
 
 
-Prefix SUM
+Prefix SUM Logic (Implemented to calculate particular range sum)
+
 class NumArray {
 public:
     NumArray(vector<int>& nums) {
