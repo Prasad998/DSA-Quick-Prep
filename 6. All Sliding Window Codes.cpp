@@ -13,8 +13,8 @@ public:
             if(j - i + 1 < K) j++ ;       // K size ka window banne do, tab tak add krte raho.
             
             else if(j - i + 1 == K){      // K size hone pe check karo
-                maxi = max(maxi, sum);    // maximimum lete jao, 
-                sum -= Arr[i];
+                maxi = max(maxi, sum);    // maximimum check karte jao, 
+                sum -= Arr[i];            // Purana udate jao,
                 i++; j++;                 // window slide karte jao ...
             }
         }
