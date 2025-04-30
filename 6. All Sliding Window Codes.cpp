@@ -6,15 +6,16 @@ public:
         int N = Arr.size() ; 
         long sum = 0, maxi = INT_MIN;
         int i = 0, j = 0;
+
+
         while(j < N){
             sum += Arr[j];
-            if(j - i + 1 < K) j++ ; 
+            if(j - i + 1 < K) j++ ;       // K size ka window banne do, tab tak add krte raho.
             
-            else if(j - i + 1 == K){
-                if(sum > maxi) maxi = sum;
+            else if(j - i + 1 == K){      // K size hone pe check karo
+                maxi = max(maxi, sum);    // maximimum lete jao, 
                 sum -= Arr[i];
-                i++; 
-                j++;
+                i++; j++;                 // window slide karte jao ...
             }
         }
         return maxi;
