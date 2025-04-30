@@ -7,31 +7,23 @@ public:
         int i=0;
         int j=0;
         long int maxi=INT_MIN;
+        
         while(j<N)
         {
+            // Sum karna hai apneko
             sum=sum+Arr[j];
-            // Rightmost element me add karo
-            
-            
+            // K size tak window banne do...
             if(j-i+1<K)
             {
                 j++;
             }
-            
-            else if(j-i+1==K)
+            else if(j-i+1==K)            // K size ka window banne ke baad slide marte raho
             {
-              if(sum>maxi)
-              maxi=sum;
-            
-            
-            // leftmost element udao. 
-            sum=sum-Arr[i];
-            
-            // Window slide karo 
-              i++;
-              j++;
+                maxi = max(maxi, sum);
+                sum=sum-Arr[i];  // pehle ka udaao
+                 
+                i++; j++; // Window slide karo 
             }
-        
         }
         return maxi;
     }
