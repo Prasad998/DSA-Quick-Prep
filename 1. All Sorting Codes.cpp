@@ -227,6 +227,21 @@ int maxSubarraySum(int arr[], int n) {
 
 ===========================================================================
 
+//Logic -- 
+// This creates a boolean array prime of size n+1, initialized to true..
+//   Here we Assume that all numbers are prime 
+    bool prime[n + 1];
+    memset(prime, true, sizeof(prime));
+
+// here we traverse from 2 to √N  -- to find if the primes marked true are actually true.
+      for (int p = 2; p * p <= n; p++) {
+        
+        if (prime[p] == true) {
+            for (int i = p * p; i <= n; i += p)
+                prime[i] = false;
+        }
+    }
+
 Prime Number in O(logn) time.
   
 void SieveOfEratosthenes(int n)
