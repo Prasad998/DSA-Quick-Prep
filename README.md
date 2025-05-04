@@ -7,11 +7,18 @@ https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%
 
                                     Data Strutures | Algorithms | Problem Solving Techniques
 
-![image](https://github.com/user-attachments/assets/c447ec4b-9e75-4019-925e-d8cb3cd784ba)
+<!-- Image with no label -->
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/c447ec4b-9e75-4019-925e-d8cb3cd784ba" alt="image" width="50%" style="float: left; margin-right: 10px;" />
+</p>
 
-**Learning Path**
+<!-- Labeled section with image -->
+<p>
+  <strong>Learning Path</strong>
+  <br />
+  <img src="https://github.com/user-attachments/assets/bf2ebd62-7d9f-47a2-aa93-4938061e6e36" alt="Learning Path" width="50%" style="float: left; margin-right: 10px;" />
+</p>
 
-![image](https://github.com/user-attachments/assets/bf2ebd62-7d9f-47a2-aa93-4938061e6e36)
 
 
 **Challenge yourself**
@@ -47,9 +54,8 @@ Sliding Window  Generic Code
 -->
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb" alt="image" width="50%" style="float: left; margin-right: 10px;" />
-  <img src="https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209" alt="image" width="50%" style="float: left; margin-right: 10px;" />
-  <img src="https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342" alt="image" width="50%" style="float: left; margin-right: 10px;" />
-  <img src="https://github.com/user-attachments/assets/9400d550-49f5-48dc-97b7-fa1766cb4bd8" alt="image" width="50%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb" alt="image" width="70%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209" alt="image" width="70%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342" alt="image" width="70%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/9400d550-49f5-48dc-97b7-fa1766cb4bd8" alt="image" width="70%" style="float: left; margin-right: 10px;" />
 </p>
-
