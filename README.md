@@ -32,6 +32,10 @@ When learning DSA, focus on understanding the underlying concepts and principles
 Repetition is key to transferring knowledge from short-term to long-term memory.
 By revisiting concepts and problems regularly, you reinforce your understanding and make it easier to recall the information later.
 **
+
+Sliding Window  Generic Code
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb" />
+
 ![image](https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209)
 
 ![image](https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342)
