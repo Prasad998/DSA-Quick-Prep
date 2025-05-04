@@ -34,11 +34,22 @@ By revisiting concepts and problems regularly, you reinforce your understanding 
 **
 
 Sliding Window  Generic Code
-<img width="932" alt="image" src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb"/>
+
+
+<!-- 
+ <img width="932" alt="image" src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb"/>
 
 ![image](https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209)
 
 ![image](https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342)
 
 ![image](https://github.com/user-attachments/assets/9400d550-49f5-48dc-97b7-fa1766cb4bd8)
+-->
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb" alt="image" width="50%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209" alt="image" width="50%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342" alt="image" width="50%" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/9400d550-49f5-48dc-97b7-fa1766cb4bd8" alt="image" width="50%" style="float: left; margin-right: 10px;" />
+</p>
 
