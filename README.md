@@ -34,9 +34,9 @@ By revisiting concepts and problems regularly, you reinforce your understanding 
 **
 
 Sliding Window  Generic Code
-<img width="932" alt="image" src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb" width="200" height="400" />
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/3b660146-5d77-48c6-8e59-40274f3fb9bb"/>
 
-![image](https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209 =250x250)
+![image](https://github.com/user-attachments/assets/616ae1d5-d60d-4636-a0ba-3f2e024df209)
 
 ![image](https://github.com/user-attachments/assets/fbcdb520-b456-4319-859d-0abb206e2342)
 
