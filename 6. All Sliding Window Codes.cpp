@@ -111,7 +111,8 @@ class Solution {
             
             else if (j - i + 1 == k) 
             {
-                // Remove elements that are outside the current window
+               // Remove elements that are outside the current window
+               // The condition to remove out-of-window elements (heap.top().second < i).
                 while (!heap.empty() && heap.top().second < i) // ya condition madhe ghol kela
                 {
                     heap.pop();
