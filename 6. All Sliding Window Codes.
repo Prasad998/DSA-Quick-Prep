@@ -118,14 +118,11 @@ class Solution {
                     heap.pop();
                 }
 
-                
                 res.push_back(heap.top().first);  // finding the answer
-
                 i++; // sliding the window ahead
                 j++;
             }
         }
-
         return res;
     }
 };
