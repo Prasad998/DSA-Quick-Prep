@@ -90,3 +90,41 @@ public:
         return res; 
     }
 };
+ 
+
+// Given an array arr[] of size N and an integer K. Find the maximum for each and every contiguous subarray of size K.
+class Solution {
+  public:
+    vector<int> maxOfSubarrays(vector<int>& arr, int k) {
+        // code here
+        vector<int> res;
+        int i = 0;
+        int j = 0;
+        priority_queue<pair<int, int>> heap;
+
+        while (j < arr.size()) 
+        {
+            heap.push({arr[j], j}); //do this calculation-- yaha tak sahi tha mai 
+
+            if (j - i + 1 < k)  j++ ; // ye bhi sahi tha.
+            
+            
+            else if (j - i + 1 == k) 
+            {
+                // Remove elements that are outside the current window
+                while (!heap.empty() && heap.top().second < i) // ya condition madhe ghol kela
+                {
+                    heap.pop();
+                }
+
+                
+                res.push_back(heap.top().first);  // finding the answer
+
+                i++; // sliding the window ahead
+                j++;
+            }
+        }
+
+        return res;
+    }
+};
