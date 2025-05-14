@@ -31,19 +31,19 @@ void insertion_sort(int arr[], int n)
 
 ===========================================================================
 void bubble_sort(int arr[], int n) {
-    // bubble sort
-    for (int i = 0 ; i<n-1;i++) {
+    for (int i = 0; i < n - 1; i++) {
         int didSwap = 0;
-        for (int j = 0; j <n-i; j++) {
+        for (int j = 0; j < n - i - 1; j++) {  // corrected bound
             if (arr[j] > arr[j + 1]) {
-                swap(arr[j], arr[j+1]);
+                swap(arr[j], arr[j + 1]);
                 didSwap = 1;
             }
         }
         if (didSwap == 0) {
-            break;
+            break;  // optimization: stop if already sorted
         }
     }
+}
 
 
   =  =  =  =  =  =  =  =  =  =  =  =  =  = BOILER PLATE CODE  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =
