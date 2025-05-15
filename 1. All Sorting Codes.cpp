@@ -275,9 +275,9 @@ using namespace std;
 
 void dfs(int node, vector<int> adj[], vector<bool>& visited, stack<int>& st) {
     visited[node] = true;
-    for (int nbr : adj[node]) {
-        if (!visited[nbr])
-            dfs(nbr, adj, visited, st);
+    for (auto it : adj[node]) {
+        if (!visited[it])
+            dfs(it, adj, visited, st);
     }
     st.push(node);
 }
