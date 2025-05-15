@@ -252,7 +252,7 @@ void SieveOfEratosthenes(int n)
     for (int p = 2; p * p <= n; p++) {
         
         if (prime[p] == true) {
-            for (int i = p * p; i <= n; i += p)
+            for (int i = p * p; i <= n; i += p)      // i= p*p ->mhnje I ek perfect square pahije konacha tari      //important loop ahe.
                 prime[i] = false;
         }
     }
@@ -261,4 +261,40 @@ void SieveOfEratosthenes(int n)
         if (prime[p])
             cout << p << " ";
 }
- 
+
+
+
+TopoSort Algorithm
+DFS + Stack → Reverse Stack = Topo Sort         means...
+Visit → Recurse → Push → Print Stack
+
+#include <iostream>
+#include <vector>
+#include <stack>
+using namespace std;
+
+void dfs(int node, vector<int> adj[], vector<bool>& visited, stack<int>& st) {
+    visited[node] = true;
+    for (int nbr : adj[node]) {
+        if (!visited[nbr])
+            dfs(nbr, adj, visited, st);
+    }
+    st.push(node);
+}
+
+void topoSort(int V, vector<int> adj[]) {
+    vector<bool> visited(V, false);
+    stack<int> st;
+
+    for (int i = 0; i < V; i++) {
+        if (!visited[i])
+            dfs(i, adj, visited, st);
+    }
+
+    // Print topological order
+    while (!st.empty()) {
+        cout << st.top() << " ";
+        st.pop();
+    }
+}
+
