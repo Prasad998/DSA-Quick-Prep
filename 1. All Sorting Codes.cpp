@@ -298,3 +298,21 @@ void topoSort(int V, vector<int> adj[]) {
     }
 }
 
+
+
+
+// CODE  Skeleton
+// void dfs(int node) {
+//     visited[node] = true;
+//     for (nbr : adj[node])
+//         if (!visited[nbr])
+//             dfs(nbr);
+//     st.push(node);  // after visiting neighbors
+// }
+
+// for (all nodes)
+//     if not visited → dfs(node)
+
+// print stack (reversed order)
+
+
