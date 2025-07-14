@@ -38,6 +38,8 @@ Let me show you where it shows up in real life:
 14. **Dynamic Programming** – Finance apps, AI prediction, optimization problems
 
 ---
+<img width="1080" height="1350" alt="image" src="https://github.com/user-attachments/assets/3a222b1e-988f-433b-ae52-ddcf94e1582b" />
+---
 
 ### 🧭 Beyond Code: What DSA Really Teaches You
 
