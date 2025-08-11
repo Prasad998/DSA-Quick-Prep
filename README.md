@@ -4,6 +4,8 @@
 But **DSA isn’t just about getting the job** — it’s about **learning how to think.**
 
 Let me show you where it shows up in real life:
+![unnamed](https://github.com/user-attachments/assets/a944e9c8-caf0-4aa1-ae3d-433e6210a5dd)
+
 
 ### 🔁 Common DSA Concepts in the Real World
 
