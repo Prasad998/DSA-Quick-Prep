@@ -5,6 +5,7 @@ But **DSA isn’t just about getting the job** — it’s about **learning how t
 
 Let me show you where it shows up in real life:
 ![unnamed](https://github.com/user-attachments/assets/a944e9c8-caf0-4aa1-ae3d-433e6210a5dd)
+![gif2](https://github.com/user-attachments/assets/68ffcc97-1301-447c-bc44-b42491255290)
 
 
 ### 🔁 Common DSA Concepts in the Real World
