@@ -121,6 +121,9 @@ Similarly, to improve your problem-solving:
 
 ---
 
+
+### Line Sweep Technique [LeetCode Link - Line Sweep](https://leetcode.com/discuss/post/7250238/line-sweep-technique-made-simple-quick-v-181m/)
+
 ## 🧩 Sliding Window: Generic Template
 
 > A fundamental technique for problems involving subarrays or substrings.
